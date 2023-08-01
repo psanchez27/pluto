@@ -1,0 +1,2 @@
+# pluto
+WordPress Theme
