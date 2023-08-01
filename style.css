@@ -1,0 +1,59 @@
+/*
+  Theme Name: Pluto
+  Author: Pablo Sanchez
+  Description: Clean WordPress theme for simple static web builds
+  Version: 1.0
+*/
+
+
+/* Utilities */
+:root{
+  --primary-color: #fc5185;
+  --secondary-color: #364f6b;
+  --light-backgounrd-color: #fff;
+  --dark-backgorund-color: #222;
+  --light-text-color: #fff;
+  --dark-text-color: #000;
+  --extra-color-1: #43dde6;
+  --extra-color-2: #f0f0f0;
+}
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Card Class */
+.card{
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 10px #b2b2b2;
+  transition: .5s;
+}
+
+.card:hover{
+  box-shadow: 0px 4px 10px 5px #b2b2b2;
+  transform: scale(1.02);
+}
+
+/* Button Class */
+.btn{
+  padding: 12px 24px;
+  border: none;
+  font-size: 1.2rem;
+  transition: .2s ease-in-out;
+  border-radius: 4px;
+}
+.btn:hover{
+  transform: scale(1.05);
+}
+.btn-primary{
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.btn-secondary{
+  background-color: var(--secondary-color);
+  color: #fff;
+}
