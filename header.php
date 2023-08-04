@@ -11,5 +11,5 @@
 <body <?php body_class(); ?>>
 
   <!-- Header -->
-  <header>
-  </header>
+  <main>
+  </main>
