@@ -11,5 +11,30 @@
 <body <?php body_class(); ?>>
 
   <!-- Header -->
-  <main>
-  </main>
+  <header>
+    <div class="top-header"></div>
+    <div class="main-header">
+      <!-- Logo or site title name -->
+      <div class="branding">
+        <!-- Logo -->
+        <?php
+        if ( has_custom_logo() ) ?
+          the_custom_logo();
+        else: ?>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+          <p class="site-title"><?php blog_info( 'title' ); ?></p>
+        </a>
+      </div>
+
+      <!-- Nav menu -->
+      <nav class="main-menu">
+        <?php
+          wp_nav_menu(
+            array(
+              'theme_location' => 'pluto_primary_menu'
+            )
+          );
+        ?>
+      </nav>
+    </div>
+  </header>
