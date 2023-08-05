@@ -18,13 +18,15 @@
       <div class="branding">
         <!-- Logo -->
         <?php
-        if ( has_custom_logo() ) ?
-          the_custom_logo();
-        else: ?>
+        if ( has_custom_logo() ) :
+          the_custom_logo(); ?>
+        <?php else : ?>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
           <p class="site-title"><?php blog_info( 'title' ); ?></p>
         </a>
       </div>
+
+      <?php endif; ?>
 
       <!-- Nav menu -->
       <nav class="main-menu">
