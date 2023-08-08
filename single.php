@@ -13,7 +13,7 @@
       </div>
       <!-- Meta info -->
       <div class="post-meta-info">
-        <p class="post-author">Created by: <?php the_author_posts_link(); ?> on: <?php echo get_the_date(); ?></p>
+        <p class="post-author">Created on: <?php echo get_the_date(); ?></p>
         <p class="post-categories">Categories: <?php the_category( ', ' ); ?></p>
         <p class="post-tags">Tags: <?php the_tags( '', ', ' ); ?></p>
       </div>
