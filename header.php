@@ -22,7 +22,7 @@
           the_custom_logo(); ?>
         <?php else : ?>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-          <p class="site-title"><?php blog_info( 'title' ); ?></p>
+          <p class="site-title"><?php bloginfo( 'title' ); ?></p>
         </a>
       </div>
 

@@ -15,13 +15,13 @@ add_action( 'wp_enqueue_scripts', 'pluto_load_scripts' );
 
 
 function pluto_config(){
-  //Assign Nav manu locations
-  $nav_locations = array(
-    'pluto_primary_menu' => 'Main Menu',
-    'pluto_footer_menu' => 'Footer Menu'
-  );
   //Register nav menu locations
-  register_nav_menu( $nav_locations );
+  register_nav_menus(
+    array(
+      'pluto_primary_menu' => 'Main Menu',
+      'pluto_footer_menu' => 'Footer Menu'
+    )
+  );
 
   //Add theme supports
   add_theme_support( 'custom-logo' );

@@ -20,7 +20,7 @@
 
       <!-- Meta info -->
       <div class="post-query-meta-info">
-        <p class="post-author">Posted by: <?php the_author_post_link(); ?> on: <?php echo get_the_date(); ?></p>
+        <p class="post-author">Posted by: <?php the_author_posts_link(); ?> on: <?php echo get_the_date(); ?></p>
         <p class="post-categories">Categories: <?php the_category( ', ' ); ?></p>
         <p class="post-tags">Tags: <?php the_tags( '', ', ' ); ?></p>
       </div>
