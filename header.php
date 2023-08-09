@@ -30,6 +30,7 @@
 
       <!-- Nav menu -->
       <nav class="main-menu">
+      <button type="button" name="mobile-menu-toggle" id="mobile-menu-toggle" class="mobile-menu-toggle"><i class="fa fa-regular fa-bars"></i></button>
         <?php
           wp_nav_menu(
             array(
