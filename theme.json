@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+
+  "settings": {
+    "color": {
+      "defaultPalette": false,
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#00f132",
+          "name": "primary"
+        },
+        {
+          "slug": "secondary",
+          "color": "#dd0132",
+          "name": "Seconday"
+        }
+      ]
+    },
+    "layout": {
+      "contentSize": "1140px",
+      "wideSize": "1300px"
+    },
+    "appearanceTools": true,
+    "blocks": {
+      "core/paragraph": {
+        "color": {
+          "defaultPalette": true
+        }
+      }
+    }
+  }
+}
