@@ -13,7 +13,7 @@
   <!-- Header -->
   <header>
     <div class="top-header"></div>
-    <div class="main-header">
+    <div class="main-header top">
       <!-- Logo or site title name -->
       <div class="branding">
         <!-- Logo -->
@@ -28,9 +28,11 @@
 
       <?php endif; ?>
 
+      <!-- Mobile menu toggle -->
+      <button type="button" name="mobile-menu-toggle" id="mobile-menu-toggle" class="mobile-menu-toggle"><i class="fa-solid fa-bars fa-lg"></i></button>
+
       <!-- Nav menu -->
-      <nav class="main-menu">
-      <button type="button" name="mobile-menu-toggle" id="mobile-menu-toggle" class="mobile-menu-toggle"><i class="fa fa-regular fa-bars"></i></button>
+      <nav id="main-menu" class="main-menu">
         <?php
           wp_nav_menu(
             array(

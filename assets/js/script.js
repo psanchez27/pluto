@@ -1,4 +1,4 @@
-const nav = document.querySelectorAll('.main-header')
+const nav = document.querySelectorAll('.main-header')[0]
 
 //Upon scroll event, check if user is at the top of screen
 window.addEventListener('scroll', () => {
@@ -15,7 +15,7 @@ window.addEventListener('scroll', () => {
 
 //Toggle Mobile menu
 let mobileMenuToggle = document.getElementById('mobile-menu-toggle')
-let navMenu = document.getElementById('menu-main-menu')
+let navMenu = document.getElementById('main-menu')
 mobileMenuToggle.addEventListener('click', () => {
   navMenu.classList.toggle('show-nav')
   mobileMenuToggle.children[0].classList.toggle('fa-bars')

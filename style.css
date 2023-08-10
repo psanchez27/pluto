@@ -24,7 +24,7 @@
   --extra-color-2: #f0f0f0;
 }
 
-body{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -69,15 +69,15 @@ body{
   color: #fff;
   position: fixed;
   top: 0;
-  width: 90vw;
+  width: 100%;
   background-color: #222222ee;
   height: 80px;
-  transition: all .6s;
+  transition: .6s ease-in-out;
   z-index: 99;
   padding: 0 5vw;
 }
 
-.header-main.top{
+.main-header.top{
   height: 100px;
   background: transparent;
 }
@@ -86,23 +86,31 @@ body{
   font-size: 3rem;
 }
 
-.main-header nav ul{
-  list-style: none;
-  display: flex;
+.branding a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-header nav{
   transition: .4s ease-in-out;
 }
 
-.main-header nav ul li{
+nav ul{
+  list-style: none;
+  display: flex;
+}
+
+nav ul li{
   margin: 0 12px;
   font-size: 1.2rem;
 }
 
-.main-header nav ul li a{
+nav ul li a{
   text-decoration: none;
   color: #fff;
 }
 
-.main-header nav ul li a.active{
+nav ul li a.active{
   color: var(--extra-color-1);
 }
 
@@ -119,11 +127,36 @@ body{
   border: 1px solid #fff
 }
 
+
+
+/* Footer */
+footer{
+  background-color: #000;
+  overflow: hidden;
+  color: #fff;
+}
+
+.main-footer-content{
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+footer .copyright{
+  background-color: #000;
+  text-align: center;
+}
+
+
+
+
+
 @media only screen and (max-width: 820px){
+  /* Header */
   .mobile-menu-toggle{
     display: block;
   }
-  .main-header nav ul#menu-main-menu{
+  .main-header nav{
     height: 115vh;
     flex-direction: column;
     background-color: #333;
@@ -135,10 +168,23 @@ body{
     min-width: 320px;
     margin-left: -100vw;
   }
-  .main-header nav ul#menu-main-menu li{
-    margin: 1rem 0;
+  .main-header nav.show-nav{
+    margin-left: 0;
   }
-}
-.main-header nav ul#menu-main-menu.show-nav{
-  margin-left: 0;
+  .main-header nav ul{
+    flex-direction: column;
+  }
+  .main-header nav ul li{
+    margin: 1rem;
+  }
+
+
+
+  /* Footer */
+  .main-footer-content{
+    flex-direction: column-reverse;
+  }
+  .main-footer-content ul{
+    justify-content: center;
+  }
 }
